@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
 import Tree from "./tree";
-
+import data from "./tree/data.json";
 import "./App.css";
 
 export default function App() {
@@ -231,7 +231,7 @@ export default function App() {
             </div>
           </Col>
           <Col sm={6}>
-            <Tree />
+            <Tree name="/root" file={data}/>
           </Col>
         </Row>
       </Container>
